@@ -1,0 +1,45 @@
+/*Estilo para la seccion de imagenes*/
+
+section{
+    display: flex; /*Distribuye las imagenes de forma horizontal*/
+    width: 99.1vw;/*Ancho de las imagenes*/
+    height: 99.1vh;/*largo de las imagenes*/
+}
+
+section img{
+  width: 0; /*las imagenes no tienen ancho visible*/
+  flex-grow: 1; /*Indica el crecimiento de la imagen*/
+  object-fit: cover; /*Cubre todo el espacio*/
+  opacity: 0.8;/*hace que las imagenes tengan transparencia*/
+  transition: all 0.5s ease; /*Creacion de la transision al pasar el mouse*/
+}
+
+/*Estilos al pasar el mouse por las imagenes*/
+section img:hover{
+  width: clamp(200px, 40vw, 500px); /*La imagen crece segun los valores*/
+  opacity: 1; /*La imagen se vuelve totalmente opaca*/
+  filter: contrast(120%);/*Aumenta el contraste*/
+}
+/*Cierre para los estilos de las imagenes*/
+
+/*Diseño Responsive*/
+@media screen and (max-width: 768px) {
+  section {
+      flex-wrap: wrap; /*Las imagenes se distribuyen ordenamente*/
+      height: auto; /*la altura se ajusta proporcionalmente*/
+  }
+
+  section img {
+      width: 50%; /*Cada imagen ocupa la mitad del ancho*/
+      height: auto; /*La altura se ajusta dependiendo del ancho*/
+      transition: none; /*Quita las transiciones*/
+      opacity: 1; /*Quita la transparencia*/
+      filter: none; /*Quita los filtros*/
+  }
+
+  section img:hover {
+      width: 50%; /*no cambia el tamaño al pasar el mouse*/
+      opacity: 1; /*Quita la transparencia*/
+      filter: none; /*No cambia el filtro*/
+  }
+}

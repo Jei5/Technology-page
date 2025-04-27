@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <!-- Creado por Jeisson Melo-->
+    <!--Galeria de imagenes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Se Vincula Font Awesome para los iconos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Se Vincula style.css para los estilos del footer y menu -->
+    <link rel="stylesheet" href="style_galeria.css">
+    <!-- Se Vincula Font Awesome para los iconos -->
+</head>
+<body>
+    <!--Creacion de la barra de navegacion-->
+    <nav class="Menu"> <!--Creacion de la clase Menu-->
+        <ul><!--Se crea una lista-->
+            <li class="Logo"><img src="imagenes/Fondo inicio prueba.jpg" alt="Logo"></li>
+            <!-- Se anexa un logo al menu-->
+            <!--Se agregan los hipervinculos -->
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <!--Cierre de lista-->
+    </nav>
+    <!--Cierre de la barra de navegacion-->
+
+    <!--Desarrollo de Pagina-->
+    <!--Creacion del titulo principal-->
+    <h1 id="Titulo_Principal">GALERIA</h1>
+
+    <section> <!-- se crean secciones independientes-->
+        <!-- Se anexan imagenes -->
+        <img src="imagenes_galeria/imagen_1.jpg" alt="imagen 1">
+        <img src="imagenes_galeria/imagen_2.jpg" alt="imagen 2">
+        <img src="imagenes_galeria/imagen_3.png" alt="imagen 3">
+        <img src="imagenes_galeria/imagen_4.png" alt="imagen 4">
+        <img src="imagenes_galeria/imagen_5.png" alt="imagen 5">
+    </section>
+    <!-- Cierre de la seccion-->
+
+    <!--Creacion footer-->
+    <footer class="Pie_Pagina">
+        <!-- se crea el div Grupo_1 que contiene los demas divs para aplicar estilos-->
+        <div class="Grupo_1">
+            <!--Se crea el div para el logo-->
+            <div class="Box">
+                <figure>
+                    <!--Se inserta una  imagen-->
+                    <img src="imagenes/Logo Footer 2.png" alt="Logo">
+                </figure>
+            </div>
+
+            <!--Se crea el div para agregar un titulo e informacion-->
+            <div class="Box">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <!--Se agrega un div para insertar las redes sociales con sus iconos-->
+            <div class="Box">
+                <h2>Siguenos</h2>
+                <div class="Red_Social">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                </div>
+            </div>
+        <!--Cierre del div(Grupo_1)--> 
+        </div>
+
+        <!--Se crea el div Grupo_2 para los derechos reservados-->
+        <div class="Grupo_2">
+            <small>&copy; 2025 <b>Aurora</b> - Todos Los Derechos Reservados</small>
+        </div>
+    </footer>
+</body>
+</html>
